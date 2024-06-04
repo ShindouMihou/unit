@@ -13,3 +13,13 @@ val String.txt get(): Unit<String> {
         allowsAppend = true,
     )
 }
+
+val String.unit get(): Unit<String> {
+    return Unit(
+        address = this,
+        charset = Charsets.UTF_8,
+        decoder =  StringDecoder,
+        encoder = StringEncoder,
+        allowsAppend = true,
+    )
+}

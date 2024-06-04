@@ -10,10 +10,14 @@ that aims to implement simpler and developer-friendly abstractions for simple fi
 data class Hello(name: String)
 ```
 ```kotlin
+// Automatically appends `.json` and related extensions (will respect if you put `.json`, etc. extension, but currently won't support other extensions)
 val json = "example".json<Hello>() // pw.mihou.unit.json dependency needed
 val yaml = "example".yaml<Hello>() // pw.mihou.unit.yaml dependency needed
 val toml = "example".toml<Hello>() // pw.mihou.unit.toml dependency needed
 val text = "example".txt
+
+// Uses the entire provided path as address, this doesn't append any extension or anything.
+val unit = "example.txt".unit
 ```
 
 ```kotlin
