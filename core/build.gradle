@@ -1,0 +1,6 @@
+description = "The core module of Unit Kotlin, designed to make file operations simpler for Kotlin."
+version = "1.0.0"
+
+dependencies {
+    implementation "org.jetbrains.kotlinx:kotlinx-datetime:0.6.0"
+}

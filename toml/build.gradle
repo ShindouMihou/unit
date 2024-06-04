@@ -1,0 +1,15 @@
+plugins {
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.9.21'
+}
+
+description = "A module for Unit to add support to TOML files."
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(path: ":core")
+    implementation 'com.akuleshov7:ktoml-core:0.5.1'
+}
